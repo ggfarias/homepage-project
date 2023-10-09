@@ -20,11 +20,11 @@ body, h1, h2, h3, p, ul, li {
 
 body {
     min-height: 100vh;
-    max-width: 1680px;
+    max-width: 1280px;
     margin: 0 auto;
     background: var(--white);
     line-height: 1.5;
-    padding: 4rem;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -70,6 +70,7 @@ main {
 }
 
 .main-left-side {
+    margin-top: 1.5rem;
     display: flex;
     max-width: 900px;
     flex-direction: column;
@@ -87,7 +88,7 @@ main img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 .titles-main p {
@@ -96,19 +97,49 @@ main img {
 }
 
 .buttons-main {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons-main a {
+    text-decoration: underline;
+    color: var(--blue);
+    font-weight: 700;
+}
+
+.get-started {
+    background-color: var(--blue);
+    color: var(--white-light);
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    box-shadow: var(--dark-light);
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
 }
 
 section .advertise-main {
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    gap: 0.75rem;
+}
+
+.advertise-main img {
+    color: var(--green);
+    align-items: center;
+    justify-content: center;
 }
 
 .title {
     position: relative;
     font-family: 'Poppins', sans-serif;
-    font-size: 3.75rem;
+    font-size: 3.5rem;
     color: var(--dark-light);
-    max-width: 700px;
+    max-width: 800px;
 }
 
 .logo {
@@ -120,8 +151,13 @@ footer {
     color: var(--grey);
     width: 100%;
     height: 50px;
-    text-align: center;
     justify-content: center;
+    align-items: end;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--dark-light);
 }
 
 
@@ -130,7 +166,7 @@ footer {
         display: initial;
     }
 
-    .get-started {
+    .button-dark {
         width: auto;
     }
 
